@@ -27,10 +27,10 @@
             Calculator myCalculator = new Calculator();
 
             Console.Write("Enter Num1: ");
-            int Num1 = Convert.ToInt32(Console.ReadLine());
+            double Num1 = Convert.ToDouble(Console.ReadLine());
             
             Console.Write("Enter Num2: ");
-            int Num2 = Convert.ToInt32(Console.ReadLine());
+            double Num2 = Convert.ToDouble(Console.ReadLine());
 
             // Perform some operations and print the results
             double resultAdd = myCalculator.add(Num1, Num2);
@@ -45,14 +45,14 @@
             double resultDivide = myCalculator.divide(Num1, Num2);
             Console.WriteLine(Num1 + " / " + Num2 + " = " + resultDivide); 
 
-            try
-            {
-                myCalculator.divide(5.0, 0.0);
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                Console.WriteLine("Error: " + e.Message); 
-            }
+            //try
+            //{
+            //    myCalculator.divide(5.0, 0.0);
+            //}
+            //catch (ArgumentOutOfRangeException e)
+            //{
+            //    Console.WriteLine("Error: " + e.Message); 
+            //}
         }
     }
 }
